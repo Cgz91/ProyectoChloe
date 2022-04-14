@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Nunito:wght@200&family=Shadows+Into+Light&display=swap');
+
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0px;
+    padding: 5px;
+}
+
+/*vista mobile*/
+@media only screen and (min-width:0px) and (max-width:767px){
+	.container{
+	display: grid;
+	grid-template-areas: 
+	"header"
+	"main"
+	"footer";
+	grid-template-columns: 100%;
+	grid-template-rows: auto 1fr 1fr ;
+    background-color: #f5f5f5;
+} 
+
+.gridTienda {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 250px 250px 250px 150px;
+    grid-template-areas: 
+    "tituloTienda"
+    "articuloUno"
+    "articuloDos"
+    "articuloTres";
+}
+
+
+header {
+    grid-area: header;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-image: url(../img/back2.png);
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+main {
+    grid-area: main;
+    background-color: #f5f5f5;
+    margin-top: 254px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #f5f5f5;
+
+}
+
+.titulo {
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-weight: bold;
+    color: #6753C7;
+    font-size: 92px;
+}
+
+.subtitulo {
+    font-family: 'Shadows Into Light', cursive;
+    font-style: italic;
+    color: #8273ce;
+    margin-top: 1%;
+}
+
+
+.navList {
+    display: inline-block;
+    margin-top: 1%;
+    margin-left: -1%;
+}
+
+.navListItem {
+    display: inline-block;
+    font-size: smaller;
+    
+}
+
+.navListLink {
+    text-decoration: none;
+    color: #41463D;
+    font-size: larger;
+    font-weight: bold
+}
+
+.fotos {
+    width: 300px;
+    border-radius: 10%;
+
+}
+
+.bloqueDeFotos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+p,
+h3 {
+    font-weight: bold;
+    color: #6753C7;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.boton {
+    border-radius: 10px;
+    background-color: #B8CDF8;
+    border-color: #6753C7;
+    font-weight: bold;
+    border-width: 3px;
+}
+
+.formu {
+    font-weight: bold;
+}
+
+.tituloPages {
+    padding: 30px ;
+    margin-top: 2%;
+}
+
+.textoQuienes {
+    text-align: center;
+    padding: 35px;
+}
+
+.review {
+    display: flex;
+    justify-content: space-around;
+    margin:20px
+}
+
+.review__item {
+    text-align: justify;
+    border-radius: 8px;
+    border-color: #6753C7;
+    border-style: groove;
+    background-color: #B8CDF8;
+}
+
+ 
+.gridColeccion {
+    display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: auto 1fr 1fr 1fr ;
+grid-template-areas: 
+"tituloPages"
+"bloqueMantas"
+"bloqueJuguetes"
+"bloqueRopa";
+}
+
+.bloqueJuguetes {
+    grid-area: bloqueJuguetes;
+}
+
+.bloqueMantas {
+    grid-area: bloqueMantas;
+}
+
+.bloqueRopa {
+    grid-area: bloqueRopa;
+} 
+}
+
+
+/*vista desktop */
+@media only screen and (min-width:1240px){
+    .container{
+        display: grid;
+        grid-template-areas: 
+        "header header header"  
+        "main main main"  
+        "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 10px auto 1fr  ;
+        background-color: #e5ecfa;
+    } 
+
+
+    header {
+        grid-area: header;
+        position: fixed;
+        top: 0px;
+        width: 100%;;
+        background-image: url(../img/back3.png);
+    }
+    
+    main {
+        grid-area: main;
+        background-color: #e5ecfa;
+        margin-top: 254px;
+        grid-column-start: 1 ;
+        grid-column-end: 5 ;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    footer {
+        grid-area: footer;
+        background-color: #e5ecfa;
+    
+    }
+    
+    .titulo {
+        font-family: 'Amatic SC', cursive;
+        text-align: center;
+        font-weight: bold;
+        color: #6753C7;
+        font-size: 92px;
+    }
+    
+    .subtitulo {
+        font-family: 'Shadows Into Light', cursive;
+        font-style: italic;
+        color: #8273ce;
+        margin-top: 1%;
+    }
+    
+    
+    .navList {
+        display: inline-block;
+        margin-top: 1%;
+        margin-left: -1%;
+    }
+    
+    .navListItem {
+        display: inline-block;
+        font-size: larger;
+        font-weight: bold;
+        font-family: 'Shadows Into Light', cursive;
+        font-style: italic;
+    }
+    
+    .navListLink {
+        text-decoration: none;
+        color: #41463D;
+        font-size: larger;
+        font-weight: bold
+    }
+    
+    .fotos {
+        width: 300px;
+        border-radius: 10%;
+    
+    }
+    
+    .bloqueDeFotos {
+        grid-area: bloqueDeFotos;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    p,
+    h3 {
+        font-weight: bold;
+        color: #6753C7;
+        font-size: x-large;
+    }
+    
+    article {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .boton {
+        border-radius: 10px;
+        background-color: #B8CDF8;
+        border-color: #6753C7;
+        font-weight: bold;
+        border-width: 3px;
+    }
+    
+    .formu {
+        font-weight: bold;
+    }
+    
+    .tituloPages {
+        grid-area: tituloPages;
+        padding: 10px ; 
+        margin-top: 1%; 
+        color: #6753C7;
+        font-weight: bold;
+    }
+    
+    .textoQuienes {
+    padding: 35px;
+    text-align: justify;
+    border-radius: 10px;
+    width: 400px;
+    font-style: italic;
+    font-weight: bold;
+    }
+
+    .seccionQuienes {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .review {
+        display: flex;
+        justify-content: space-around;
+        margin: 80px
+    }
+
+    .review__item {
+        text-align: justify;
+        border-radius: 8px;
+        border-color: #6753C7;
+        border-style: groove;
+        width: 300px;
+        background-color: #B8CDF8;
+    }
+
+.gridTienda {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 1fr;
+    grid-template-areas:
+    "tituloTienda tituloTienda tituloTienda"
+    "articuloUno articuloDos articuloTres" ;
+}
+
+.articuloUno {
+    grid-area: articuloUno;
+}
+
+.articuloDos {
+    grid-area: articuloDos;
+}
+
+.articuloTres {
+    grid-area: articuloTres;
+}
+
+.tituloTienda {
+    grid-area: tituloTienda;
+    padding: 20px;
+    color: #6753C7;
+    font-weight: bold;
+}
+
+.gridColeccion {
+    display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 150px 1fr 1fr ;
+grid-template-areas: 
+"tituloPages tituloPages"
+"bloqueMantas bloqueJuguetes"
+"bloqueRopa none";
+}
+
+.bloqueJuguetes {
+    grid-area: bloqueJuguetes;
+}
+
+.bloqueMantas {
+    grid-area: bloqueMantas;
+}
+
+.bloqueRopa {
+    grid-area: bloqueRopa;
+}
+}
