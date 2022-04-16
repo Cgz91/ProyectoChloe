@@ -180,6 +180,210 @@ grid-template-areas:
 } 
 }
 
+/* vista entre desktop y mobile */
+@media only screen and (min-width:768px) and (max-width:1239px){
+    .container{
+        display: grid;
+        grid-template-areas: 
+        "header header header"  
+        "main main main"  
+        "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 10px auto 1fr  ;
+        background-color: #e5ecfa;
+    } 
+
+
+    header {
+        grid-area: header;
+        position: fixed;
+        top: 0px;
+        width: 100%;;
+        background-image: url(../img/back3.png);
+    }
+    
+    main {
+        grid-area: main;
+        background-color: #e5ecfa;
+        margin-top: 254px;
+        grid-column-start: 1 ;
+        grid-column-end: 5 ;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    footer {
+        grid-area: footer;
+        background-color: #e5ecfa;
+    
+    }
+    
+    .titulo {
+        font-family: 'Amatic SC', cursive;
+        text-align: center;
+        font-weight: bold;
+        color: #6753C7;
+        font-size: 92px;
+    }
+    
+    .subtitulo {
+        font-family: 'Shadows Into Light', cursive;
+        font-style: italic;
+        color: #8273ce;
+        margin-top: 1%;
+    }
+    
+    
+    .navList {
+        display: inline-block;
+        margin-top: 1%;
+        margin-left: -1%;
+    }
+    
+    .navListItem {
+        display: inline-block;
+        font-size: larger;
+        font-weight: bold;
+        font-family: 'Shadows Into Light', cursive;
+        font-style: italic;
+    }
+    
+    .navListLink {
+        text-decoration: none;
+        color: #41463D;
+        font-size: larger;
+        font-weight: bold
+    }
+    
+    .fotos {
+        width: 300px;
+        border-radius: 10%;
+    
+    }
+    
+    .bloqueDeFotos {
+        grid-area: bloqueDeFotos;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    p,
+    h3 {
+        font-weight: bold;
+        color: #6753C7;
+        font-size: x-large;
+    }
+    
+    article {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .boton {
+        border-radius: 10px;
+        background-color: #B8CDF8;
+        border-color: #6753C7;
+        font-weight: bold;
+        border-width: 3px;
+    }
+    
+    .formu {
+        font-weight: bold;
+    }
+    
+    .tituloPages {
+        grid-area: tituloPages;
+        padding: 10px ; 
+        margin-top: 1%; 
+        color: #6753C7;
+        font-weight: bold;
+    }
+    
+    .textoQuienes {
+    padding: 35px;
+    text-align: justify;
+    border-radius: 10px;
+    width: 400px;
+    font-style: italic;
+    font-weight: bold;
+    }
+
+    .seccionQuienes {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .review {
+        display: flex;
+        justify-content: space-around;
+        margin: 80px
+    }
+
+    .review__item {
+        text-align: justify;
+        border-radius: 8px;
+        border-color: #6753C7;
+        border-style: groove;
+        width: 300px;
+        background-color: #B8CDF8;
+    }
+
+.gridTienda {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 1fr;
+    grid-template-areas:
+    "tituloTienda tituloTienda tituloTienda"
+    "articuloUno articuloDos articuloTres" ;
+}
+
+.articuloUno {
+    grid-area: articuloUno;
+}
+
+.articuloDos {
+    grid-area: articuloDos;
+}
+
+.articuloTres {
+    grid-area: articuloTres;
+}
+
+.tituloTienda {
+    grid-area: tituloTienda;
+    padding: 20px;
+    color: #6753C7;
+    font-weight: bold;
+}
+
+.gridColeccion {
+    display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 150px 1fr 1fr ;
+grid-template-areas: 
+"tituloPages tituloPages"
+"bloqueMantas bloqueJuguetes"
+"bloqueRopa none";
+}
+
+.bloqueJuguetes {
+    grid-area: bloqueJuguetes;
+}
+
+.bloqueMantas {
+    grid-area: bloqueMantas;
+}
+
+.bloqueRopa {
+    grid-area: bloqueRopa;
+}
+}
 
 /*vista desktop */
 @media only screen and (min-width:1240px){
@@ -223,7 +427,7 @@ grid-template-areas:
         font-family: 'Amatic SC', cursive;
         text-align: center;
         font-weight: bold;
-        color: #53c755;
+        color: #6753C7;
         font-size: 92px;
     }
     
