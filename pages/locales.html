@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/img/favicon.jpg">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Locales</title>
@@ -15,21 +16,61 @@
     <header>
     <h1 class="titulo">Chloe Tejidos</h1>
     <h2 class="animate__animated animate__slideInLeft">Tejidos 100% a mano hechos con amor</h2>
-    <nav class="nav">
-        <ul class="navList">
-            <li class="navListItem"> <a class="navListLink" href="../index.html">Home</a></li>
-        <li class="navListItem"> <a class="navListLink" href="../pages/coleccion.html"> Colección </a> </li>
-        <li class="navListItem"><a class="navListLink" href="../pages/tiendaonline.html"> Tienda online </a> </li>
-        <li class="navListItem"> <a class="navListLink"  href="../pages/locales.html"> Locales</a> </li>
-        <li class="navListItem"> <a class="navListLink" href="../pages/quienessomos.html">Quienes somos? </a></li>
-        <li class="navListItem"> <a class="navListLink" href="../pages/contacto.html">Contacto</a></li>
-        </ul>
-        </nav>
+    <div class="container" style="background-image: url(../assets/img/back3.png)">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-image: url(../assets/img/back3.png)" >
+            <div class="container-fluid" >
+              <a class="navbar-brand" href="#">Menu</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  href="../pages/coleccion.html">Coleccion</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/tiendaonline.html">Tienda Online</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/locales.html">Locales</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/quienessomos.html">Quienes somos?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
 
     </header>
     <main>
     <h2  class="tituloPages" >Locales</h2>
+    <div class="container" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
 
+      <div class="card" style="background-color: rgba(138, 130, 130, 0.046);">
+        <div class="card-body">
+          <h5 class="card-title">Sucursal Belgrano</h5>
+          <p class="card-text">Virrey del pino 4121</p>
+          <p class="card-text"><small class="text-muted">Horarios: Lunes a sabado de 9hs a 15hs</small></p>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d52535.31408349793!2d-58.3840066!3d-34.6178866!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb671a904a2b3%3A0xd1cb2764597695f5!2sVirrey%20del%20Pino%204191%2C%20C1430%20CABA!5e0!3m2!1ses-419!2sar!4v1647623132285!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      
+      <div class="card"  style="background-color: rgba(138, 130, 130, 0.046);">
+        <div class="card-body">
+          <h5 class="card-title">Sucursal Caballito</h5>
+          <p class="card-text">Planes 543</p>
+          <p class="card-text"><small class="text-muted">Horarios: Lunes a Sabado de 12hs a 19hs</small></p>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d52535.31408349793!2d-58.3840066!3d-34.6178866!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca137acbebe1%3A0x5f06990361df743e!2sPlanes%20683%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1647623077127!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+<!-- 
 <article>
     <div class="mapa">
         <h3>Sucursal Belgrano</h3>
@@ -46,7 +87,7 @@
         <p>Horarios: Lunes a Sabado de 12hs a 19hs</p>
     </div>
 
-</article>
+</article> -->
 </main>
 
 <footer>
@@ -58,5 +99,5 @@
 </footer>
 
 </body>
-
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
 </html>

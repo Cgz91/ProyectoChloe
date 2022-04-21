@@ -1,72 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/img/favicon.jpg">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Quienes somos?</title>
 </head>
-<body class="container">
+
+<body>
     <header>
     <h1 class="titulo">Chloe Tejidos</h1>
     <h2 class="animate__animated animate__slideInLeft">Tejidos 100% a mano hechos con amor</h2>
-    <nav class="nav">
-        <ul class="navList">
-            <li class="navListItem"> <a class="navListLink" href="../index.html">Home</a></li>
-        <li class="navListItem"> <a class="navListLink" href="../pages/coleccion.html"> Colección </a> </li>
-        <li class="navListItem"><a class="navListLink" href="../pages/tiendaonline.html"> Tienda online </a> </li>
-        <li class="navListItem"> <a class="navListLink"  href="../pages/locales.html"> Locales</a> </li>
-        <li class="navListItem"> <a class="navListLink" href="../pages/quienessomos.html">Quienes somos? </a></li>
-        <li class="navListItem"> <a class="navListLink" href="../pages/contacto.html">Contacto</a></li>
-        </ul>
-        </nav>
+    <div class="container" style="background-image: url(../assets/img/back3.png)">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-image: url(../assets/img/back3.png)" >
+          <div class="container-fluid" >
+            <a class="navbar-brand" href="#">Menu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"  href="../pages/coleccion.html">Coleccion</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/tiendaonline.html">Tienda Online</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/locales.html">Locales</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/quienessomos.html">Quienes somos?</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
     </header>
 <main>
 <h2 class="tituloPages">Quienes somos?</h2>
 
-<div class="seccionQuienes">
-<div>
-<p class="textoQuienes">  Chloe tejidos nació en Caballito (CABA) hace más de 30 años como una pequeña tienda de mantas de lana, poniendo en ello mucho empeño e ilusión. Durante todo este tiempo hemos procurado dar a nuestros clientes los mejores servicios, siempre con responsabilidad e innovación y mostrando al público un trato cercano y atento. Nos dedicamos a la produccion y venta de juguetes, mantas para bebes y ropa de cama.  </p>
-</div>
-
-<div>
-    <img class="fotos" src="../assets/img/manito.jpeg" alt="manito" >
-</div>
-</div>
-
-<div class="review">
-    <div class="review__item">
-      <div class="review__itemHead">
-        <p>Florencia </p>
+<div class="container">
+  <div class="card">
+    <div class="row g-0" style="background-color:#e5ecfa;">
+      <div class="col-5 col-sm-4">
+        <img src="../assets/img/manito.jpeg" class="img-fluid w-100" alt="fotomanito">
       </div>
-
-      <blockquote>
-        "Encargue varias mantitas para mi bebe recien nacido, son muy suaves y a mi bebe le encantan!""
-      </blockquote>
-    </div>
-
-    <div class="review__item">
-      <div class="review__itemHead">
-        <p>Marcos </p>
+      <div class="col-7 col-sm-8">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text">Chloe tejidos nació en Caballito (CABA) hace más de 30 años como una pequeña tienda de mantas de lana, poniendo en ello mucho empeño e ilusión. Durante todo este tiempo hemos procurado dar a nuestros clientes los mejores servicios, siempre con responsabilidad e innovación y mostrando al público un trato cercano y atento. Nos dedicamos a la produccion y venta de juguetes, mantas para bebes y ropa de cama.</p>
+        </div>
       </div>
-
-      <blockquote>
-        "Me hicieron a pedido un conejo muy lindo para mi sobrina, las recomiendo!"
-      </blockquote>
     </div>
-
-    <div class="review__item">
-      <div class="review__itemHead">
-        <p>Isabel</p>
-      </div>
-      <blockquote>
-        "Me encantan las mantas que hacen, ideales para el invierno ya que son muy abrigadas"
-      </blockquote>
-    </div>
+    
   </div>
+
+</div>
+
+<div class="container" style="display: flex; margin-top: 30px;">
+  <figure>
+    <blockquote class="blockquote">
+      <p>"Encargue varias mantitas para mi bebe recien nacido, son muy suaves y a mi bebe le encantan!"</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+       <cite title="Source Title">Florencia</cite>
+    </figcaption>
+  </figure>
+  <figure>
+    <blockquote class="blockquote">
+      <p> "Me hicieron a pedido un conejo muy lindo para mi sobrina, las recomiendo"</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+        <cite title="Source Title">Marcos </cite>
+    </figcaption>
+  </figure>
+  <figure>
+    <blockquote class="blockquote">
+      <p> "Me encantan las mantas que hacen, ideales para el invierno ya que son muy abrigadas"</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+     <cite title="Source Title">Isabel</cite>
+    </figcaption>
+  </figure>
+</div>
 
 </main>
 <footer>
@@ -77,4 +103,5 @@
     <img src="../assets/img/tajetas.png" alt="tarjetas" width="110" height="25">
 </footer>
 </body>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
 </html>

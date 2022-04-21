@@ -33,7 +33,6 @@
 
 header {
     grid-area: header;
-    position: fixed;
     top: 0px;
     width: 100%;
     background-image: url(../img/back3.png);
@@ -46,7 +45,6 @@ h2 {
 main {
     grid-area: main;
     background-color: #f5f5f5;
-    margin-top: 254px;
 }
 
 footer {
@@ -213,7 +211,7 @@ h4 {
 
     header {
         grid-area: header;
-        position: fixed;
+        /* position: fixed; */
         top: 0px;
         width: 100%;;
         background-image: url(../img/back3.png);
@@ -222,7 +220,7 @@ h4 {
     main {
         grid-area: main;
         background-color: #e5ecfa;
-        margin-top: 254px;
+        /* margin-top: 254px; */
         grid-column-start: 1 ;
         grid-column-end: 5 ;
         display: flex;
@@ -437,7 +435,7 @@ h4 {
 /*vista desktop */
 @media only screen and (min-width:1240px){
     .containerIndex{
-        display: grid;
+        /* display: grid; */
         grid-template-areas: 
         "header header header"  
         "main main main"  
@@ -450,7 +448,7 @@ h4 {
 
     header {
         grid-area: header;
-        position: fixed;
+        /* position: fixed; */
         top: 0px;
         width: 100%;;
         background-image: url(../img/back3.png);
@@ -458,10 +456,8 @@ h4 {
     
     main {
         grid-area: main;
-        width: auto;
-        height: auto;
         background-color: #e5ecfa;
-        margin-top: 250px ;
+        /* margin-top: 100px ; */
         display: flex;
         flex-direction: column;
     }
@@ -566,7 +562,7 @@ h4 {
     .tituloPages {
         grid-area: tituloPages;
         padding: 10px ; 
-        margin-top: 3%; 
+        margin-top: 2%; 
         color: #6753C7;
         font-weight: bold;
     }
@@ -580,7 +576,7 @@ h4 {
     font-weight: bold;
     }
 
-    .seccionQuienes {
+ .seccionQuienes {
         display: flex;
         justify-content: space-evenly;
     }
@@ -603,10 +599,12 @@ h4 {
 .gridTienda {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 80px 1fr;
+    grid-template-rows: 80px 1fr 1fr;
     grid-template-areas:
     "tituloTienda tituloTienda tituloTienda"
-    "articuloUno articuloDos articuloTres" ;
+    "articuloUno articuloDos articuloTres" 
+    "articuloCuatro articuloCinco articuloSeis";
+    
 }
 
 .articuloUno {
@@ -620,6 +618,19 @@ h4 {
 .articuloTres {
     grid-area: articuloTres;
 }
+
+.articuloCuatro {
+    grid-area: articuloCuatro;
+}
+
+.articuloCinco {
+    grid-area: articuloCinco;
+}
+
+.articuloSeis {
+    grid-area: articuloSeis;
+}
+
 
 .tituloTienda {
     grid-area: tituloTienda;
@@ -635,7 +646,7 @@ grid-template-rows: 150px 1fr 1fr ;
 grid-template-areas: 
 "tituloPages tituloPages"
 "bloqueMantas bloqueJuguetes"
-"bloqueRopa none";
+"bloqueRopa bloqueSacos";
 }
 
 .bloqueJuguetes {
@@ -648,6 +659,10 @@ grid-template-areas:
 
 .bloqueRopa {
     grid-area: bloqueRopa;
+}
+
+.bloqueSacos {
+    grid-area: bloqueSacos;
 }
 
 .form-label {
@@ -681,4 +696,5 @@ h4 {
 .form-control  {
     width: 70%;
 }
+
 }
