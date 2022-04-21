@@ -20,19 +20,7 @@
     background-color: #f5f5f5;
 } 
 
-.gridTienda {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 100px 250px 250px 250px 150px;
-    grid-template-areas: 
-    "tituloTienda"
-    "articuloUno"
-    "articuloDos"
-    "articuloTres";
-}
-
 header {
-    grid-area: header;
     top: 0px;
     width: 100%;
     background-image: url(../img/back3.png);
@@ -43,14 +31,11 @@ h2 {
 }
 
 main {
-    grid-area: main;
     background-color: #e5ecfa;
 }
 
 footer {
-    grid-area: footer;
     background-image: linear-gradient( #e5ecfa,#9589d0 )
-
 }
 
 .titulo {
@@ -69,33 +54,9 @@ footer {
     --animate-duration: 3s;
 }
 
-.navList {
-    display: inline-block;
-    margin-top: 1%;
-    margin-left: -1%;
-}
-
-.navListItem {
-    display: inline-block;
-    font-size: smaller;
-    
-}
-
-.navListLink {
-    text-decoration: none;
-    color: #41463D;
-    font-size: larger;
-    font-weight: bold
-}
-
-.navListLink:hover {
-    color: #8273ce;
-  }
-
 .fotos {
     width: 300px;
     border-radius: 10%;
-
 }
 
 .bloqueDeFotos {
@@ -120,43 +81,11 @@ article {
     align-items: center;
 }
 
-.boton {
-    border-radius: 10px;
-    background-color: #B8CDF8;
-    border-color: #6753C7;
-    font-weight: bold;
-    border-width: 3px;
-}
-
-.formu {
-    font-weight: bold;
-}
-
 .tituloPages {
     padding: 30px ;
     margin-top: 2%;
 }
 
-.textoQuienes {
-    text-align: center;
-    padding: 35px;
-}
-
-.review {
-    display: flex;;
-    justify-content: space-around;
-    margin:20px
-}
-
-.review__item {
-    text-align: justify;
-    border-radius: 8px;
-    border-color: #6753C7;
-    border-style: groove;
-    background-color: #B8CDF8;
-}
-
- 
 .gridColeccion {
     display: grid;
 grid-template-columns: 1fr;
@@ -216,7 +145,6 @@ h4 {
 
     header {
         grid-area: header;
-        /* position: fixed; */
         top: 0px;
         width: 100%;;
         background-image: url(../img/back3.png);
@@ -225,7 +153,6 @@ h4 {
     main {
         grid-area: main;
         background-color: #e5ecfa;
-        /* margin-top: 254px; */
         grid-column-start: 1 ;
         grid-column-end: 5 ;
         display: flex;
@@ -253,37 +180,10 @@ h4 {
         margin-top: 1%;
         --animate-duration: 3s;
     }
-    
-    
-    .navList {
-        display: inline-block;
-        margin-top: 1%;
-        margin-left: -1%;
-    }
-    
-    .navListItem {
-        display: inline-block;
-        font-size: larger;
-        font-weight: bold;
-        font-family: 'Shadows Into Light', cursive;
-        font-style: italic;
-    }
-    
-    .navListLink {
-        text-decoration: none;
-        color: #41463D;
-        font-size: larger;
-        font-weight: bold
-    }
 
-    .navListLink:hover {
-        color: #8273ce;
-      }
-    
     .fotos {
         width: 300px;
         border-radius: 10%;
-    
     }
     
     .bloqueDeFotos {
@@ -310,18 +210,6 @@ h4 {
         align-items: center;
     }
     
-    .boton {
-        border-radius: 10px;
-        background-color: #B8CDF8;
-        border-color: #6753C7;
-        font-weight: bold;
-        border-width: 3px;
-    }
-    
-    .formu {
-        font-weight: bold;
-    }
-    
     .tituloPages {
         grid-area: tituloPages;
         padding: 10px ; 
@@ -330,55 +218,39 @@ h4 {
         font-weight: bold;
     }
     
-    .textoQuienes {
-    padding: 35px;
-    text-align: justify;
-    border-radius: 10px;
-    width: 400px;
-    font-style: italic;
-    font-weight: bold;
+    .gridTienda {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 80px 1fr 1fr;
+        grid-template-areas:
+        "tituloTienda tituloTienda tituloTienda"
+        "articuloUno articuloDos articuloTres" 
+        "articuloCuatro articuloCinco articuloSeis";
     }
-
-    .seccionQuienes {
-        display: flex;
-        justify-content: space-evenly;
+    
+    .articuloUno {
+        grid-area: articuloUno;
     }
-
-    .review {
-        display: flex;
-        justify-content: space-around;
-        margin: 80px
+    
+    .articuloDos {
+        grid-area: articuloDos;
     }
-
-    .review__item {
-        text-align: justify;
-        border-radius: 8px;
-        border-color: #6753C7;
-        border-style: groove;
-        width: 300px;
-        background-color: #B8CDF8;
+    
+    .articuloTres {
+        grid-area: articuloTres;
     }
-
-.gridTienda {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 80px 1fr;
-    grid-template-areas:
-    "tituloTienda tituloTienda tituloTienda"
-    "articuloUno articuloDos articuloTres" ;
-}
-
-.articuloUno {
-    grid-area: articuloUno;
-}
-
-.articuloDos {
-    grid-area: articuloDos;
-}
-
-.articuloTres {
-    grid-area: articuloTres;
-}
+    
+    .articuloCuatro {
+        grid-area: articuloCuatro;
+    }
+    
+    .articuloCinco {
+        grid-area: articuloCinco;
+    }
+    
+    .articuloSeis {
+        grid-area: articuloSeis;
+    }
 
 .tituloTienda {
     grid-area: tituloTienda;
@@ -408,7 +280,6 @@ grid-template-areas:
 .bloqueRopa {
     grid-area: bloqueRopa;
 }
-
 
 .nav-link {
     font-size: large;
@@ -453,7 +324,6 @@ h4 {
 
     header {
         grid-area: header;
-        /* position: fixed; */
         top: 0px;
         width: 100%;;
         background-image: url(../img/back3.png);
@@ -462,7 +332,6 @@ h4 {
     main {
         grid-area: main;
         background-color: #e5ecfa;
-        /* margin-top: 100px ; */
         display: flex;
         flex-direction: column;
     }
@@ -490,31 +359,6 @@ h4 {
         --animate-duration: 3s;
     }
 
-    .navList {
-        display: inline-block;
-        margin-top: 1%;
-        margin-left: -1%;
-    }
-    
-    .navListItem {
-        display: inline-block;
-        font-size: larger;
-        font-weight: bold;
-        font-family: 'Shadows Into Light', cursive;
-        font-style: italic;
-    }
-    
-    .navListLink {
-        text-decoration: none;
-        color: #41463D;
-        font-size: larger;
-        font-weight: bold;
-    }
-
-    .navListLink:hover {
-        color: #8273ce;
-      }
-    
     .fotos {
         width: 300px;
         border-radius: 10%; 
@@ -524,7 +368,6 @@ h4 {
         transform: scale(1.1, 1.1);
         transition: 3s;
     }
-
     
     .bloqueDeFotos {
         grid-area: bloqueDeFotos;
@@ -551,19 +394,6 @@ h4 {
         align-items: center;
     }
     
-    .boton {
-        border-radius: 10px;
-        background-color: #B8CDF8;
-        border-color: #6753C7;
-        font-weight: bold;
-        border-width: 3px;
-    
-    }
-    
-    .formu {
-        font-weight: bold;
-    }
-    
     .tituloPages {
         grid-area: tituloPages;
         padding: 10px ; 
@@ -572,35 +402,6 @@ h4 {
         font-weight: bold;
     }
     
-    .textoQuienes {
-    padding: 35px;
-    text-align: justify;
-    border-radius: 10px;
-    width: 400px;
-    font-style: italic;
-    font-weight: bold;
-    }
-
- .seccionQuienes {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .review {
-        display: flex;
-        justify-content: space-around;
-        margin: 80px
-    }
-
-    .review__item {
-        text-align: justify;
-        border-radius: 8px;
-        border-color: #6753C7;
-        border-style: groove;
-        width: 300px;
-        background-color: #B8CDF8;
-    }
-
 .gridTienda {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
