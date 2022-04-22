@@ -17,8 +17,10 @@
 	"footer";
 	grid-template-columns: 100%;
 	grid-template-rows: auto 1fr 1fr ;
-    background-color: #f5f5f5;
+    background-color: #e9f3fa;
 } 
+
+
 
 header {
     top: 0px;
@@ -31,11 +33,11 @@ h2 {
 }
 
 main {
-    background-color: #e5ecfa;
+    background-color: #e9f3fa;
 }
 
 footer {
-    background-image: linear-gradient( #e5ecfa,#9589d0 )
+    background-image: linear-gradient( #e9f3fa,#9589d0 )
 }
 
 .titulo {
@@ -136,8 +138,13 @@ h4 {
 
 .container {
     flex-wrap: wrap;
-    background-color: #e5ecfa;
+    background-color: #e9f3fa;
 }
+.d-block {
+    border-radius: 20px;
+}
+
+
 }
 
 /* vista entre desktop y mobile */
@@ -152,7 +159,7 @@ h4 {
     
     main {
         grid-area: main;
-        background-color: #e5ecfa;
+        background-color: #e9f3fa;
         grid-column-start: 1 ;
         grid-column-end: 5 ;
         display: flex;
@@ -161,7 +168,7 @@ h4 {
     
     footer {
         grid-area: footer;
-    background-image: linear-gradient( #e5ecfa,#9589d0 );
+    background-image: linear-gradient( #e9f3fa,#9589d0 );
     }
     
     .titulo {
@@ -305,6 +312,9 @@ h4 {
 .form-control  {
     width: 70%;
 }
+.d-block {
+    border-radius: 20px;
+}
 
 }
 
@@ -318,7 +328,7 @@ h4 {
         "footer footer footer";
         grid-template-columns: 1fr 1fr 1fr ;
         grid-template-rows: 10px auto 1fr  ;
-        background-color: #e5ecfa;
+        background-color: #e9f3fa;
     } 
 
 
@@ -331,14 +341,14 @@ h4 {
     
     main {
         grid-area: main;
-        background-color: #e5ecfa;
+        background-color: #e9f3fa;
         display: flex;
         flex-direction: column;
     }
     
     footer {
         grid-area: footer;
-        background-image: linear-gradient( #e5ecfa,#9589d0 )
+        background-image: linear-gradient( #e9f3fa,#9589d0 )
 
     }
     
@@ -490,9 +500,6 @@ grid-template-areas:
     font-weight: bolder;
 }
 
-.container {
-    margin-left: inherit;
-}
 
 h4 {
     font-size: larger;
@@ -501,6 +508,10 @@ h4 {
 
 .form-control  {
     width: 70%;
+}
+
+.d-block {
+    border-radius: 20px;
 }
 
 }
