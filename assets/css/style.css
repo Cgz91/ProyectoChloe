@@ -37,7 +37,7 @@ main {
 }
 
 footer {
-    background-image: linear-gradient( #e9f3fa,#9589d0 )
+    background-image: linear-gradient( #e9f3fa,#aba3d0 )
 }
 
 .titulo {
@@ -126,7 +126,7 @@ h4 {
    }
 
    .iframe {
-    width: 300px;
+    width: 250px;
 }
 
 }
