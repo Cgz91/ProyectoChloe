@@ -1,0 +1,484 @@
+@import 'utilidades/variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Nunito:wght@200&family=Shadows+Into+Light&display=swap');
+
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0px;
+    padding: 5px;
+}
+
+// vista mobile
+
+
+@media only screen and (min-width:0px) and (max-width:767px){
+	.container {
+	display: grid;
+	grid-template-areas: 
+	"header"
+	"main"
+	"footer";
+	grid-template-columns: 100%;
+	grid-template-rows: auto 1fr 1fr ;
+    background-color: $color-background;
+} 
+
+ // header 
+
+header {
+    top: 0px;
+    width: 100%;
+    background-image: url(../img/back3.png);
+}
+
+.titulo {
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-weight: bold;
+    color: $color-titulos;
+    font-size: 92px;
+}
+
+//animacion subtitulo 
+
+.animate__animated.animate__slideInLeft {
+    font-family: 'Shadows Into Light', cursive;
+    font-style: italic;
+    color: #8273ce;
+    margin-top: 1%;
+    --animate-duration: 3s;
+}
+
+//menu 
+
+.nav-link {
+    font-size: large;
+    font-weight: bold;
+}
+
+.nav-item {
+    font-size: large;
+    font-weight: bold;
+}
+
+.navbar-brand {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+//main 
+
+main {
+    background-color: $color-background;
+}
+
+
+.fotos {
+    width: $width-fotos;
+    border-radius: 10%;
+}
+
+.bloqueDeFotos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+p,
+h3 {
+    font-weight: bold;
+    color: $color-titulos;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tituloPages {
+    padding: 30px ;
+    margin-top: 2%;
+}
+
+h4 {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.form-control  {
+    width: 70%;
+}
+
+.container {
+    flex-wrap: wrap;
+    background-color: $color-background;
+}
+.d-block {
+    border-radius: 20px;
+}
+#carouselColeccion {
+    width: 400px;
+    background-color: $color-background;
+   }
+
+   .iframe {
+    width: 300px;
+}
+
+
+footer {
+    background-image: linear-gradient( $color-background,#aba3d0 )
+}
+
+
+}
+
+//vista entre desktop y mobile 
+@media only screen and (min-width:768px) and (max-width:1239px){
+
+    //header
+
+    header {
+        top: 0px;
+        width: 100%;;
+        background-image: url(../img/back3.png);
+    }
+
+    
+    .titulo {
+        font-family: 'Amatic SC', cursive;
+        text-align: center;
+        font-weight: bold;
+        color: $color-titulos;
+        font-size: 92px;
+    }
+    
+
+    .animate__animated.animate__slideInLeft {
+        font-family: 'Shadows Into Light', cursive;
+        font-style: italic;
+        color: #8273ce;
+        margin-top: 1%;
+        --animate-duration: 3s;
+    }
+
+    
+//menu
+    .nav-link {
+        font-size: large;
+        font-weight: bold;
+    }
+
+    .nav-item {
+        font-size: large;
+        font-weight: bold;
+    }
+    
+    .navbar-brand {
+        font-size: x-large;
+        font-weight: bolder;
+    }
+
+    main {
+        background-color: $color-background;
+        grid-column-start: 1 ;
+        grid-column-end: 5 ;
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .fotos {
+        width: $width-fotos;
+        border-radius: 10%; 
+        
+        &:hover {
+            transform: scale(1.1, 1.1);
+            transition: 3s;
+        }
+    }
+    .bloqueDeFotos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    p,
+    h3 {
+        font-weight: bold;
+        color: $color-titulos;
+        font-size: x-large;
+    }
+    
+    article {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .tituloPages {
+        padding: 10px ; 
+        margin-top: 3%; 
+        color: $color-titulos;
+        font-weight: bold;
+    }
+     
+    //tiendaonline 
+
+    .gridTienda {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 80px 1fr 1fr;
+        grid-template-areas:
+        "tituloTienda tituloTienda tituloTienda"
+        "articuloUno articuloDos articuloTres" 
+        "articuloCuatro articuloCinco articuloSeis";
+    }
+    
+    .articuloUno {
+        grid-area: articuloUno;
+    }
+    
+    .articuloDos {
+        grid-area: articuloDos;
+    }
+    
+    .articuloTres {
+        grid-area: articuloTres;
+    }
+    
+    .articuloCuatro {
+        grid-area: articuloCuatro;
+    }
+    
+    .articuloCinco {
+        grid-area: articuloCinco;
+    }
+    
+    .articuloSeis {
+        grid-area: articuloSeis;
+    }
+
+.tituloTienda {
+    grid-area: tituloTienda;
+    padding: 20px;
+    color: $color-titulos;
+    font-weight: bold;
+}
+
+
+
+h4 {
+    font-size: large;
+    font-weight: bold;
+}
+
+.form-control  {
+    width: 70%;
+}
+.d-block {
+    border-radius: 20px;
+}
+
+#carouselColeccion {
+    width: 600px;
+    background-color: $color-background;
+   }
+
+
+   footer {
+    background-image: linear-gradient( $color-background,#9589d0 );
+    }
+    
+
+}
+
+//vista desktop 
+@media only screen and (min-width:1240px){
+
+    //header
+    header {
+        top: 0px;
+        width: 100%;;
+        background-image: url(../img/back3.png);
+    }
+
+    
+    .titulo {
+        font-family: 'Amatic SC', cursive;
+        text-align: center;
+        font-weight: bold;
+        color: $color-titulos;
+        font-size: 115px;
+    }
+    
+    .animate__animated.animate__slideInLeft {
+        font-family: 'Shadows Into Light', cursive;
+        font-style: italic;
+        font-weight: bold;
+        color: #8273ce;
+        margin-top: 1%;
+        --animate-duration: 3s;
+    }
+
+//menu
+
+.nav-link {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.nav-item {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.navbar-brand {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+    
+    main {
+        background-color: $color-background;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .fotos {
+        width: $width-fotos;
+        border-radius: 10%; 
+
+        &:hover {
+            transform: scale(1.1, 1.1);
+            transition: 3s;
+        }
+    }
+
+  
+    
+    .bloqueDeFotos {
+        grid-area: bloqueDeFotos;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    p,
+    h3 {
+        font-weight: bold;
+        color: $color-titulos;
+        font-size: x-large;
+    }
+    
+    article {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .tituloPages {
+        padding: 10px ; 
+        margin-top: 2%; 
+        color: $color-titulos;
+        font-weight: bold;
+    }
+
+    //tienda online
+
+.gridTienda {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 1fr 1fr;
+    grid-template-areas:
+    "tituloTienda tituloTienda tituloTienda"
+    "articuloUno articuloDos articuloTres" 
+    "articuloCuatro articuloCinco articuloSeis";
+    
+}
+
+.articuloUno {
+    grid-area: articuloUno;
+}
+
+.articuloDos {
+    grid-area: articuloDos;
+}
+
+.articuloTres {
+    grid-area: articuloTres;
+}
+
+.articuloCuatro {
+    grid-area: articuloCuatro;
+}
+
+.articuloCinco {
+    grid-area: articuloCinco;
+}
+
+.articuloSeis {
+    grid-area: articuloSeis;
+}
+
+
+.tituloTienda {
+    grid-area: tituloTienda;
+    padding: 20px;
+    color: $color-titulos;
+    font-weight: bold;
+}
+
+.form-label {
+    font-size: x-large;
+}
+
+
+h4 {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.form-control  {
+    width: 70%;
+}
+
+.d-block {
+    border-radius: 20px;
+}
+
+#carouselColeccion {
+ width: 600px;
+ background-color: $color-background;
+}
+
+.iframe {
+    width: 450px;
+}
+
+
+footer {
+    background-image: linear-gradient( $color-background,#9589d0 )
+
+}
+}
