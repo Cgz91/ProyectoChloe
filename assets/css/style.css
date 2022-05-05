@@ -27,10 +27,7 @@
     color: #8273ce;
     margin-top: 1%;
     --animate-duration: 3s; }
-  .nav-link {
-    font-size: large;
-    font-weight: bold; }
-  .nav-item {
+  .nav-link, .nav-item {
     font-size: large;
     font-weight: bold; }
   .navbar-brand {
@@ -97,7 +94,7 @@
     color: #8273ce;
     margin-top: 1%;
     --animate-duration: 3s; }
-  .nav-link {
+  .nav-link, .nav-item {
     font-size: large;
     font-weight: bold; }
   .nav-item {
@@ -193,7 +190,7 @@
     color: #8273ce;
     margin-top: 1%;
     --animate-duration: 3s; }
-  .nav-link {
+  .nav-link, .nav-item {
     font-size: x-large;
     font-weight: bold; }
   .nav-item {
@@ -266,10 +263,10 @@
     width: 70%; }
   .d-block {
     border-radius: 20px; }
+  .iframe {
+    width: 450px; }
   #carouselColeccion {
     width: 600px;
     background-color: #e9f3fa; }
-  .iframe {
-    width: 450px; }
   footer {
     background-image: linear-gradient(#e9f3fa, #9589d0); } }
