@@ -21,7 +21,6 @@
 
 header {
     top: 0px;
-    width: 100%;
     background-image: url(../img/back3.png);
 }
 
@@ -67,6 +66,7 @@ h2 {
 
 main {
     background-color: $color-background;
+    width: 100%;
 }
 
 
@@ -75,6 +75,9 @@ main {
     border-radius: 10%;
 }
 
+#fotosIndex {
+    width: 100%;
+}
 .bloqueDeFotos {
     display: flex;
     flex-direction: row;
@@ -123,14 +126,9 @@ h4 {
 .d-block {
     border-radius: 20px;
 }
-#carouselColeccion {
-    width: 400px;
-    background-color: $color-background;
-   }
-
    //locales 
    .iframe {
-    width: 300px;
+    width:100%;
 }
 
 //tienda online
@@ -138,20 +136,25 @@ h4 {
 .cardTienda {
     display: flex;
     padding: 2px;
-}
 
+}
 
 #articuloTienda {
     border-radius: 10px;
     border-color: #B7C8B5;
     border-width: 2px;
     border-style: groove ;
-    width: 310px;
+    width: fit-content;
     margin: 10px;
+    width: 100%;
 }
 #colorInput {
     width: 40px; 
     height: 40px;
+}
+
+#fotosTienda {
+    width: 100%;
 }
 
 .tituloTienda {
@@ -165,12 +168,12 @@ h4 {
 
     //Coleccion
 .card-img-top {
-    width: 300px;
+    width: 100%;
     border-radius: 10px;
     }
     
     .card {
-        width:310px;
+        width:250px;
         border-color: black;
         margin: 30px;
     }
@@ -191,7 +194,9 @@ h4 {
     border-color: #B7C8B5;
     border-width: 2px;
     border-style: groove ;
+    display: block;
 }
+
 
 //footer
 
@@ -253,6 +258,7 @@ h4 {
 
     main {
         background-color: $color-background;
+        width: 100%;
         grid-column-start: 1 ;
         grid-column-end: 5 ;
         display: flex;
@@ -301,12 +307,13 @@ h4 {
 
     .gridTienda {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 80px 1fr 1fr;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 80px 1fr 1fr 1fr;
         grid-template-areas:
-        "tituloTienda tituloTienda tituloTienda"
-        "articuloUno articuloDos articuloTres" 
-        "articuloCuatro articuloCinco articuloSeis";
+        "tituloTienda tituloTienda "
+        "articuloUno articuloDos " 
+        "articuloTres articuloCuatro"
+        "articuloCinco articuloSeis";
     }
     
     .articuloUno {
@@ -345,6 +352,7 @@ h4 {
 
 .cardTienda {
     display: flex;
+    flex-wrap: wrap;
     padding: 2px;
 }
 

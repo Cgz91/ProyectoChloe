@@ -8,7 +8,6 @@
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   header {
     top: 0px;
-    width: 100%;
     background-image: url(../img/back3.png); }
   .titulo {
     font-family: 'Amatic SC', cursive;
@@ -31,10 +30,13 @@
   h2 {
     margin-top: 20px; }
   main {
-    background-color: #e9f3fa; }
+    background-color: #e9f3fa;
+    width: 100%; }
   .fotos {
     width: 300px;
     border-radius: 10%; }
+  #fotosIndex {
+    width: 100%; }
   .bloqueDeFotos {
     display: flex;
     flex-direction: row;
@@ -68,11 +70,8 @@
     background-color: #e9f3fa; }
   .d-block {
     border-radius: 20px; }
-  #carouselColeccion {
-    width: 400px;
-    background-color: #e9f3fa; }
   .iframe {
-    width: 300px; }
+    width: 100%; }
   .cardTienda {
     display: flex;
     padding: 2px; }
@@ -81,21 +80,24 @@
     border-color: #B7C8B5;
     border-width: 2px;
     border-style: groove;
-    width: 310px;
-    margin: 10px; }
+    width: fit-content;
+    margin: 10px;
+    width: 100%; }
   #colorInput {
     width: 40px;
     height: 40px; }
+  #fotosTienda {
+    width: 100%; }
   .tituloTienda {
     font-family: 'Amatic SC', cursive;
     font-size: 60px;
     color: #6753C7;
     font-weight: bold; }
   .card-img-top {
-    width: 300px;
+    width: 100%;
     border-radius: 10px; }
   .card {
-    width: 310px;
+    width: 250px;
     border-color: black;
     margin: 30px; }
   #cardColeccion {
@@ -108,7 +110,8 @@
     border-radius: 10px;
     border-color: #B7C8B5;
     border-width: 2px;
-    border-style: groove; }
+    border-style: groove;
+    display: block; }
   footer, #footer {
     background-image: linear-gradient(#e9f3fa, #9589d0); }
   .bi {
@@ -142,6 +145,7 @@
     font-weight: bolder; }
   main {
     background-color: #e9f3fa;
+    width: 100%;
     grid-column-start: 1;
     grid-column-end: 5;
     display: flex;
@@ -178,9 +182,9 @@
     font-weight: bold; }
   .gridTienda {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 80px 1fr 1fr;
-    grid-template-areas: "tituloTienda tituloTienda tituloTienda" "articuloUno articuloDos articuloTres"  "articuloCuatro articuloCinco articuloSeis"; }
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 1fr 1fr 1fr;
+    grid-template-areas: "tituloTienda tituloTienda " "articuloUno articuloDos "  "articuloTres articuloCuatro" "articuloCinco articuloSeis"; }
   .articuloUno {
     grid-area: articuloUno; }
   .articuloDos {
@@ -202,6 +206,7 @@
     font-weight: bold; }
   .cardTienda {
     display: flex;
+    flex-wrap: wrap;
     padding: 2px; }
   #articuloTienda {
     border-radius: 10px;
